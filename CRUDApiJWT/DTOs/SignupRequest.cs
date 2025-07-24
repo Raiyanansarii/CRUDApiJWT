@@ -4,7 +4,7 @@
     {
         public string Role { get; set; } = string.Empty;
 
-        // Optional employee-specific fields
+        // employee-specific fields
         public int? EmpId { get; set; }
         public string? Name { get; set; }
         public DateTime? JoinDate { get; set; }

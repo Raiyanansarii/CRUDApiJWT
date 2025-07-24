@@ -14,7 +14,7 @@ namespace CRUDApiJWT.Services
 
         public async Task<List<Employee>> GetAll()
         {
-            return await _db.ExecuteFunctionAsync("sp_GetAllEmployees", r => new Employee
+            return await _db.ExecuteFunctionAsync("sp_GetAllEmployees",   r => new Employee
             {
                 EmpId = (int)r["empid"],
                 Name = (string)r["name"],

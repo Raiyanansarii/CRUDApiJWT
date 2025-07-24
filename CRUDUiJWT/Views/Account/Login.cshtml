@@ -1,0 +1,56 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDAppJWT-Login</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CRUDUiJWT.styles.css" asp-append-version="true" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>	
+	<div id="mainButton">
+		<div class="btn-text" onclick="openForm()">Sign In</div>
+		<div class="modal">
+			<div class="close-button" onclick="closeForm()">x</div>
+			<div class="form-title">Sign In</div>
+			<form class="form" onclick="login()">
+				<div class="input-group">
+					<input type="text" id="username" onblur="checkInput(this)" />
+					<label for="username">Username</label>
+				</div>
+				<div class="input-group">
+					<input type="password" id="password" onblur="checkInput(this)" />
+					<label for="password">Password</label>
+				</div>
+					<input class="form-button" type="button" value="Login" />
+			</form>
+			<div class="codepen-by">JWT CRUD APP by Raiyan</div>
+		</div>
+	</div>
+	<div class="codepen-by">JWT CRUD APP by Raiyan</div>
+
+@* @section Scripts {
+    <script src="~/js/auth.js"></script>
+} *@
+	<script src="~/js/auth.js" asp-append-version="true"></script>
+</body>
+</html>
+
+@*
+
+<h2>Login</h2>
+
+<div id="loginForm">
+    <input type="text" id="username" placeholder="Username" /><br />
+    <input type="password" id="password" placeholder="Password" /><br />
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="loginMessage"></div> *@

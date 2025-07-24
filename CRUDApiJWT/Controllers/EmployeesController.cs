@@ -19,6 +19,7 @@ namespace CRUDApiJWT.Controllers
         public async Task<IActionResult> GetAll() =>
             Ok(await _svc.GetAll());
 
+
         [HttpGet("{empId}")]
         public async Task<IActionResult> GetById(int empId)
         {
@@ -32,16 +33,9 @@ namespace CRUDApiJWT.Controllers
             return emp == null ? NotFound() : Ok(emp);
         }
 
-        //[HttpPost]
-        ////[Authorize(Roles = "hr,admin")]
-        //public async Task<IActionResult> Create(Employee e)
-        //{
-        //    await _svc.Create(e);
-        //    return CreatedAtAction(nameof(GetById), new { empId = e.EmpId }, e);
-        //}
-
+        
         [HttpPut("{empId}")]
-        //[Authorize(Roles = "hr,admin")]
+        [Authorize(Roles = "hr,admin")]
         public async Task<IActionResult> Update(int empId, Employee e)
         {
             await _svc.Update(empId, e);

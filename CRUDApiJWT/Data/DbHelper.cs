@@ -62,47 +62,5 @@ namespace CRUDApiJWT.Data
 
             return default;
         }
-
-        //public async Task<T?> ExecuteItemAsync<T>(string spName, Func<IDataReader, T> mapFunc, params NpgsqlParameter[] parameters)
-        //{
-        //    await using var conn = new NpgsqlConnection(_connStr);
-        //    await conn.OpenAsync();
-
-        //    await using var cmd = new NpgsqlCommand(spName, conn)
-        //    {
-        //        CommandType = CommandType.StoredProcedure
-        //    };
-        //    cmd.Parameters.AddRange(parameters);
-
-        //    await using var reader = await cmd.ExecuteReaderAsync();
-        //    if (await reader.ReadAsync())
-        //    {
-        //        return mapFunc(reader);
-        //    }
-
-        //    return default;
-        //}
-
-        //public async Task<List<T>> ExecuteListAsync<T>(string spName, Func<IDataReader, T> mapFunc, params NpgsqlParameter[] parameters)
-        //{
-        //    var results = new List<T>();
-
-        //    await using var conn = new NpgsqlConnection(_connStr);
-        //    await conn.OpenAsync();
-
-        //    await using var cmd = new NpgsqlCommand(spName, conn)
-        //    {
-        //        CommandType = CommandType.StoredProcedure
-        //    };
-        //    cmd.Parameters.AddRange(parameters);
-
-        //    await using var reader = await cmd.ExecuteReaderAsync();
-        //    while (await reader.ReadAsync())
-        //    {
-        //        results.Add(mapFunc(reader));
-        //    }
-
-        //    return results;
-        //}
     }
 }

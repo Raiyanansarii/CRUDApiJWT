@@ -1,0 +1,56 @@
+﻿@model CRUDUiJWT.Models.UserProfileViewModel
+
+<div class="create-form-wrapper">
+    <h1>Employee Details</h1>
+  @*   <h4>Hello, @Model.Name!</h4> *@
+    <div>
+        <hr/>
+        <dl class="row">
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.EmpId)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.EmpId)
+            </dd>
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.JoinDate)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.JoinDate)
+            </dd>
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.DOB)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.DOB)
+            </dd>
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.Gender)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Gender)
+            </dd>
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.Designation)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Designation)
+            </dd>
+            <dt class="col-3">
+                @Html.DisplayNameFor(model => model.Department)
+            </dt>
+            <dd class="col-sm-8">
+                @Html.DisplayFor(model => model.Department)
+            </dd>
+        </dl>
+    </div>
+</div>
+
+
+
